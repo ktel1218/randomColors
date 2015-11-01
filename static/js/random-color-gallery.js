@@ -12,6 +12,7 @@ var displayBoard = function (width, height, array, key){
     var row;
     var link = $('<a>');
     link.attr('href', "index.html?board-id=" + key);
+    link.attr('class', "col-lg-2 col-md-3 col-sm-4");
     var board = $('<div>');
     board.attr('class', 'board');
     board.attr('id', key);
@@ -19,7 +20,7 @@ var displayBoard = function (width, height, array, key){
     for (var n = 0; n < height; n++) {
 
         row = $('<div>');
-        row.attr('class', 'row');
+        row.attr('class', 'my-row');
         board.append(row);
 
         for (var m = 0; m < width; m++) {

@@ -50,7 +50,7 @@ var initializeBoard = function (width, height, savedBoard){
     for (var n = 0; n < height; n++) {
 
         row = $('<div>');
-        row.attr('class', 'row');
+        row.attr('class', 'my-row');
         board.append(row);
 
         for (var m = 0; m < width; m++) {

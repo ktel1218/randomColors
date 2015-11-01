@@ -13,43 +13,45 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
         <style>
-            body{
+            body {
                 background-color: #ccc;
                 font-family: sans-serif;
                 text-align: center;
             }
 
-            .row{
+            .my-row {
                 margin:0;
                 padding:0;
                 line-height: 0;
                 text-align: center;
+            }
 
+            .board{
+                margin-bottom: 20px;
             }
 
             .cell {
-                width: 6px;
-                height: 6px;
+                width: 9px;
+                height: 9px;
                 background-color: white;
                 display: inline-block;
                 border: 1px solid #ccc;
             }
 
-            .board{
-                width: 20%;
-                display: inline-block;
-                margin-top: 30px;
-                min-width: 150px;
+
+            #gallery {
+                text-align: left;
+                margin-top: 30px
             }
 
-            #gallery{
-                text-align: left;
-            }
+
         </style>
 </head>
 <body>
     <h1>Katie Lefevre</h1>
     <h2>Gallery</h2>
-    <div id="gallery"></div>
+    <div class="container-fluid">
+        <div id="gallery" class="row"></div>
+    </div>
 </body>
 </html>
