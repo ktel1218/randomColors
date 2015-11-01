@@ -36,7 +36,7 @@ var displayBoard = function (width, height, array, key){
 
 
 // Attach an asynchronous callback to read the data at our posts reference
-myDataRef.on("value", function(snapshot) {
+myDataRef.once("value", function(snapshot) {
     var boards = snapshot.val();
     for (key in boards) {
         displayBoard(WIDTH, HEIGHT, boards[key], key);

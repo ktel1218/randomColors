@@ -106,6 +106,8 @@ var saveBoard = function (){
         newBoardRef.set(boardArray);
         setSavedToken(newBoardRef.key());
     }
+
+    saveAlert();
 };
 
 
@@ -119,8 +121,17 @@ var getURLParameter = function(sParam){
             return sParameterName[1];
         }
     }
+    saveAlert();
 };
 
+var saveAlert = function (){
+    $('#saved-message').slideDown(function() {
+    setTimeout(function() {
+        $('#saved-message').slideUp();
+    }, 2000);
+});
+
+}
 savedToken = getURLParameter('board-id');
 
 
