@@ -10,18 +10,23 @@
         <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
         <script src="static/js/random-color.js"></script>
 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
         <style>
             body{
                 background-color: #ccc;
+                font-family: sans-serif;
+                text-align: center;
+            }
+
+            h1{
             }
 
             .row{
                 margin:0;
                 padding:0;
                 line-height: 0;
-                text-align: center;
-
+                min-width: 400px;
             }
 
             .cell {
@@ -38,13 +43,19 @@
                 display: none;
             }
 
+            .btn{
+                margin-top: 15px;
+            }
+
         </style>
 </head>
 <body>
+    <h1>Katie Lefevre</h1>
+    <h2>Random Colors</h2>
     <div id="board"></div>
-    <button id="clear">Clear Board</button>
-    <button id="save">Save Board</button>
-    <a href="./gallery.html">Gallery</a>
+    <button id="clear" class="btn btn-default">Clear Board</button>
+    <button id="save" class="btn btn-default">Save Board</button>
+    <a href="./gallery.html" class="btn btn-default">Gallery</a>
     <div id="saved-message">Saved</div>
 </body>
 </html>

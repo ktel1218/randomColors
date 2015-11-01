@@ -31,7 +31,7 @@ var displayBoard = function (width, height, array, key){
         }
     }
     link.append(board)
-    $('body').append(link);
+    $('#gallery').append(link);
 };
 
 
