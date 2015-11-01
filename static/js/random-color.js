@@ -121,7 +121,6 @@ var getURLParameter = function(sParam){
             return sParameterName[1];
         }
     }
-    saveAlert();
 };
 
 var saveAlert = function (){
